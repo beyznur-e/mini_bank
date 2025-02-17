@@ -25,9 +25,7 @@ Bu projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 git clone https://github.com/beyznur-e/mini_bank.git
 ```
 ### 2. Gerekli Bağımlılıkları Yükleyin
-```bash
 Proje Spring Boot ile yapılandırıldığı için, bağımlılıkları yüklemek için aşağıdaki komutu çalıştırabilirsiniz:
-```
 ```bash
 mvn clean install
 ```
