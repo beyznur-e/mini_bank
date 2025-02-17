@@ -38,8 +38,8 @@ mvn spring-boot:run
 Uygulama çalışmaya başladığında, aşağıdaki endpoint'ler üzerinden işlemler yapabilirsiniz:
 
 API Endpoint'leri
-Kullanıcı Kaydı: POST /users
-Bakiye Görüntüle: GET /users/{userId}/balance
-Para Yatırma: POST /users/{userId}/yatir
-Para Çekme: POST /users/{userId}/cek
-Para Transferi: POST /users/{senderId}/transfer/{receiverId}
+- Kullanıcı Kaydı: POST /users
+- Bakiye Görüntüle: GET /users/{userId}/balance
+- Para Yatırma: POST /users/{userId}/yatir
+- Para Çekme: POST /users/{userId}/cek
+- Para Transferi: POST /users/{senderId}/transfer/{receiverId}
