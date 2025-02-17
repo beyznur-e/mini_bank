@@ -10,11 +10,10 @@ Bu proje, Spring Boot kullanarak geliştirilmiş bir **mini banka uygulaması**d
 
 ## Teknolojiler
 
-- **Java** (JDK 17)
+- **Java**
 - **Spring Boot** (Veritabanı yönetimi için Spring Data JPA, Cache için Spring Cache)
 - **Postgre SQL**
-- **Spring Security** (Eğer güvenlik uygulandıysa)
-
+  
 ## Başlarken
 
 Bu projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
