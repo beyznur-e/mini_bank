@@ -12,7 +12,7 @@ Bu proje, Spring Boot kullanarak geliştirilmiş bir **mini banka uygulaması**d
 
 - **Java** (JDK 17)
 - **Spring Boot** (Veritabanı yönetimi için Spring Data JPA, Cache için Spring Cache)
-- **H2 Database** (In-memory veritabanı)
+- **Postgre SQL**
 - **Spring Security** (Eğer güvenlik uygulandıysa)
 
 ## Başlarken
