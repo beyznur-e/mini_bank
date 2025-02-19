@@ -13,11 +13,11 @@ jobs:
       - name: Kodu Çek
         uses: actions/checkout@v3
 
-      - name: Java 17 Kur
+      - name: Java 21 Kur
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: 'temurin'  # 'temurin' veya 'adoptopenjdk' gibi seçenekler var
+          java-version: '21'  # Java 21'i buraya yazıyoruz
           cache: maven
 
       - name: Build
