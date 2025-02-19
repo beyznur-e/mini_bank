@@ -56,7 +56,7 @@ public class TransactionService {
         User user = userOpt.get();
 
         if (user.getBalance() < amount) {
-            return "Yetersiz bakiye!";
+            return "Yetersiz bakiye !";
         }
 
         user.setBalance(user.getBalance() - amount);
