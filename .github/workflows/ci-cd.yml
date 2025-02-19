@@ -1,0 +1,39 @@
+name: Mini Banka CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu Çek
+        uses: actions/checkout@v3
+
+      - name: Java 17 Kur
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: maven
+
+      - name: Build
+        run: mvn clean package -DskipTests  
+
+      - name: Testleri Çalıştır
+        run: mvn test  
+
+      - name: Docker Login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}  # Burada sadece Secrets'dan alacak.
+          password: ${{ secrets.DOCKER_PASSWORD }}  # Burada da Secrets'dan alacak.
+
+      - name: Docker Build & Push
+        run: |
+          docker build -t mini_bank .
+          docker tag mini_bank beyznur-e/mini_bank:latest
+          docker push beyznur-e/mini_bank:latest
