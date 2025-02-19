@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.mini_bank.TransactionServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.230 s <<< FAILURE! -- in com.example.mini_bank.TransactionServiceTest
+com.example.mini_bank.TransactionServiceTest.transfer_ShouldTransferMoney_WhenBothUsersExistAndSufficientFunds -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.cache.Cache.put(Object, Object)" because the return value of "org.springframework.cache.CacheManager.getCache(String)" is null
+	at com.example.mini_bank.Service.TransactionService.transfer(TransactionService.java:97)
+	at com.example.mini_bank.TransactionServiceTest.transfer_ShouldTransferMoney_WhenBothUsersExistAndSufficientFunds(TransactionServiceTest.java:111)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
